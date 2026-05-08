@@ -4,198 +4,190 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>TJPvt.Ltd</title>
+
+  <title>INKSPIRE BUSINESS SOLUTIONS</title>
 
   <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-      scroll-behavior: smooth;
+
+    *{
+      margin:0;
+      padding:0;
+      box-sizing:border-box;
+      scroll-behavior:smooth;
     }
 
-    body {
-      font-family: Arial, sans-serif;
-      background: black;
-      color: white;
+    body{
+      background:black;
+      color:white;
+      font-family:Arial, sans-serif;
     }
 
-    nav {
-      width: 100%;
-      background: #111;
-      padding: 20px 50px;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      position: fixed;
-      top: 0;
-      z-index: 1000;
+    nav{
+      width:100%;
+      background:#111;
+      padding:20px 50px;
+      display:flex;
+      justify-content:space-between;
+      align-items:center;
+      position:fixed;
+      top:0;
+      z-index:1000;
     }
 
-    nav h1 {
-      font-size: 32px;
-      color: white;
+    nav h1{
+      font-size:30px;
     }
 
-    nav ul {
-      display: flex;
-      list-style: none;
-      gap: 25px;
+    nav ul{
+      display:flex;
+      gap:25px;
+      list-style:none;
     }
 
-    nav ul li a {
-      color: white;
-      text-decoration: none;
-      font-size: 18px;
-      transition: 0.3s;
+    nav ul li a{
+      color:white;
+      text-decoration:none;
+      font-size:18px;
     }
 
-    nav ul li a:hover {
-      color: gray;
+    nav ul li a:hover{
+      color:gray;
     }
 
-    .hero {
-      height: 100vh;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      flex-direction: column;
-      text-align: center;
-      padding: 20px;
-      background: linear-gradient(to bottom, #000000, #111111);
+    .hero{
+      height:100vh;
+      display:flex;
+      justify-content:center;
+      align-items:center;
+      flex-direction:column;
+      text-align:center;
+      padding:20px;
+      background:linear-gradient(to bottom,#000,#111);
     }
 
-    .hero h2 {
-      font-size: 80px;
-      margin-bottom: 20px;
-      animation: glow 2s infinite alternate;
+    .hero h2{
+      font-size:75px;
+      margin-bottom:20px;
+      animation:glow 2s infinite alternate;
     }
 
-    @keyframes glow {
-      from {
-        color: white;
-        transform: scale(1);
+    @keyframes glow{
+
+      from{
+        color:white;
+        transform:scale(1);
       }
 
-      to {
-        color: gray;
-        transform: scale(1.05);
-      }
-    }
-
-    .hero p {
-      font-size: 28px;
-      color: lightgray;
-      margin-bottom: 40px;
-    }
-
-    .btn {
-      padding: 15px 35px;
-      border: none;
-      border-radius: 12px;
-      font-size: 18px;
-      font-weight: bold;
-      cursor: pointer;
-      margin: 10px;
-      transition: 0.3s;
-    }
-
-    .btn:hover {
-      transform: scale(1.05);
-      background: gray;
-      color: white;
-    }
-
-    .section {
-      padding: 100px 10%;
-      text-align: center;
-    }
-
-    .section h2 {
-      font-size: 55px;
-      margin-bottom: 25px;
-    }
-
-    .section p {
-      font-size: 22px;
-      color: lightgray;
-      line-height: 1.8;
-    }
-
-    .products {
-      display: flex;
-      justify-content: center;
-      gap: 30px;
-      flex-wrap: wrap;
-      margin-top: 50px;
-    }
-
-    .card {
-      width: 320px;
-      background: #111;
-      padding: 25px;
-      border-radius: 20px;
-      transition: 0.3s;
-      box-shadow: 0 0 15px rgba(255,255,255,0.1);
-    }
-
-    .card:hover {
-      transform: translateY(-10px);
-    }
-
-    .card img {
-      width: 100%;
-      border-radius: 15px;
-      margin-bottom: 20px;
-    }
-
-    .card h3 {
-      font-size: 30px;
-      margin-bottom: 15px;
-    }
-
-    .card p {
-      color: lightgray;
-      margin-bottom: 20px;
-    }
-
-    .price {
-      font-size: 32px;
-      margin-bottom: 20px;
-      font-weight: bold;
-    }
-
-    .contact-buttons {
-      margin-top: 40px;
-    }
-
-    footer {
-      background: #111;
-      padding: 30px;
-      text-align: center;
-      color: gray;
-      margin-top: 50px;
-    }
-
-    @media(max-width:768px) {
-
-      nav {
-        flex-direction: column;
-        gap: 20px;
+      to{
+        color:gray;
+        transform:scale(1.05);
       }
 
-      nav ul {
-        flex-direction: column;
-      }
-
-      .hero h2 {
-        font-size: 50px;
-      }
-
-      .hero p {
-        font-size: 20px;
-      }
     }
+
+    .hero p{
+      font-size:25px;
+      color:lightgray;
+      margin-bottom:40px;
+    }
+
+    .btn{
+      padding:15px 35px;
+      border:none;
+      border-radius:12px;
+      font-size:18px;
+      cursor:pointer;
+      font-weight:bold;
+      margin:10px;
+      transition:0.3s;
+    }
+
+    .btn:hover{
+      background:gray;
+      color:white;
+      transform:scale(1.05);
+    }
+
+    .section{
+      padding:100px 10%;
+      text-align:center;
+    }
+
+    .section h2{
+      font-size:55px;
+      margin-bottom:40px;
+    }
+
+    .products{
+      display:flex;
+      justify-content:center;
+      gap:30px;
+      flex-wrap:wrap;
+    }
+
+    .card{
+      width:320px;
+      background:#111;
+      border-radius:20px;
+      overflow:hidden;
+      box-shadow:0 0 15px rgba(255,255,255,0.1);
+      transition:0.3s;
+    }
+
+    .card:hover{
+      transform:translateY(-10px);
+    }
+
+    .card img{
+      width:100%;
+      height:300px;
+      object-fit:cover;
+    }
+
+    .card-content{
+      padding:25px;
+    }
+
+    .card h3{
+      font-size:28px;
+      margin-bottom:15px;
+    }
+
+    .price{
+      font-size:35px;
+      margin:20px 0;
+      font-weight:bold;
+    }
+
+    footer{
+      background:#111;
+      padding:30px;
+      text-align:center;
+      color:gray;
+      margin-top:60px;
+    }
+
+    @media(max-width:768px){
+
+      nav{
+        flex-direction:column;
+        gap:20px;
+      }
+
+      nav ul{
+        flex-direction:column;
+      }
+
+      .hero h2{
+        font-size:45px;
+      }
+
+      .hero p{
+        font-size:20px;
+      }
+
+    }
+
   </style>
 </head>
 
@@ -203,11 +195,10 @@
 
   <nav>
 
-    <h1>TJPvt.Ltd</h1>
+    <h1>INKSPIRE BUSINESS SOLUTIONS</h1>
 
     <ul>
       <li><a href="#home">Home</a></li>
-      <li><a href="#about">About</a></li>
       <li><a href="#products">Products</a></li>
       <li><a href="#contact">Contact</a></li>
     </ul>
@@ -216,87 +207,77 @@
 
   <section class="hero" id="home">
 
-    <h2>Welcome to TJPvt.Ltd</h2>
+    <h2>INKSPIRE BUSINESS SOLUTIONS</h2>
 
-    <p>Professional Business & Selling Website</p>
+    <p>Professional Spiral Notebook Selling Website</p>
 
-    <div>
+    <a href="mailto:tjpvtltd@gmail.com">
+      <button class="btn">Email Us</button>
+    </a>
 
-      <a href="mailto:tjpvtltd@gmail.com">
-        <button class="btn">Email Us</button>
-      </a>
-
-      <a href="https://wa.me/919717543376" target="_blank">
-        <button class="btn">WhatsApp</button>
-      </a>
-
-    </div>
-
-  </section>
-
-  <section class="section" id="about">
-
-    <h2>About Us</h2>
-
-    <p>
-      TJPvt.Ltd is a professional business company focused on premium quality products,
-      trusted customer services, and modern business solutions.
-      We help customers with the best products and excellent support.
-    </p>
+    <a href="https://wa.me/919717543376" target="_blank">
+      <button class="btn">WhatsApp</button>
+    </a>
 
   </section>
 
   <section class="section" id="products">
 
-    <h2>Featured Products</h2>
+    <h2>Our Products</h2>
 
     <div class="products">
 
       <div class="card">
 
-        <img src="https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?q=80&w=800" alt="Product">
+        <img src="PHOTO1_LINK_HERE" alt="Notebook">
 
-        <h3>Premium Product</h3>
+        <div class="card-content">
 
-        <p>High quality business product with modern design and premium performance.</p>
+          <h3>Spiral Notebook</h3>
 
-        <div class="price">₹4,999</div>
+          <div class="price">₹180</div>
 
-        <a href="https://wa.me/919717543376" target="_blank">
-          <button class="btn">Buy Now</button>
-        </a>
+          <a href="https://wa.me/919717543376" target="_blank">
+            <button class="btn">Buy Now</button>
+          </a>
 
-      </div>
-
-      <div class="card">
-
-        <img src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?q=80&w=800" alt="Product">
-
-        <h3>Business Package</h3>
-
-        <p>Professional package designed for business growth and productivity.</p>
-
-        <div class="price">₹7,999</div>
-
-        <a href="https://wa.me/919871590390" target="_blank">
-          <button class="btn">Buy Now</button>
-        </a>
+        </div>
 
       </div>
 
       <div class="card">
 
-        <img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?q=80&w=800" alt="Product">
+        <img src="PHOTO2_LINK_HERE" alt="Notebook">
 
-        <h3>Enterprise Solution</h3>
+        <div class="card-content">
 
-        <p>Modern enterprise solution with advanced features and premium support.</p>
+          <h3>Premium Notebook Set</h3>
 
-        <div class="price">₹12,999</div>
+          <div class="price">₹240</div>
 
-        <a href="https://wa.me/919717543376" target="_blank">
-          <button class="btn">Buy Now</button>
-        </a>
+          <a href="https://wa.me/919871590390" target="_blank">
+            <button class="btn">Buy Now</button>
+          </a>
+
+        </div>
+
+      </div>
+
+      <div class="card">
+
+        <img src="PHOTO3_LINK_HERE" alt="Notebook">
+
+        <div class="card-content">
+
+          <h3>Bulk Spiral Notebook Pack</h3>
+
+          <div class="price">₹700</div>
+
+          <a href="https://wa.me/919717543376" target="_blank">
+            <button class="btn">Buy Now</button>
+          </a>
+
+        </div>
 
       </div>
 
@@ -308,46 +289,39 @@
 
     <h2>Contact Us</h2>
 
-    <p>
-      Contact us anytime for orders, support, and business inquiries.
-    </p>
+    <a href="mailto:tjpvtltd@gmail.com">
+      <button class="btn">Email</button>
+    </a>
 
-    <div class="contact-buttons">
+    <a href="https://wa.me/919717543376" target="_blank">
+      <button class="btn">WhatsApp 1</button>
+    </a>
 
-      <a href="mailto:tjpvtltd@gmail.com">
-        <button class="btn">Email</button>
-      </a>
+    <a href="https://wa.me/919871590390" target="_blank">
+      <button class="btn">WhatsApp 2</button>
+    </a>
 
-      <a href="https://wa.me/919717543376" target="_blank">
-        <button class="btn">WhatsApp 1</button>
-      </a>
+    <a href="tel:+919717543376">
+      <button class="btn">Call 1</button>
+    </a>
 
-      <a href="https://wa.me/919871590390" target="_blank">
-        <button class="btn">WhatsApp 2</button>
-      </a>
+    <a href="tel:+919871590390">
+      <button class="btn">Call 2</button>
+    </a>
 
-      <a href="tel:+919268409870">
-        <button class="btn">Call 1</button>
-      </a>
-
-      <a href="tel:+919871590390">
-        <button class="btn">Call 2</button>
-      </a>
-
-      <a href="https://instagram.com/tj_company29" target="_blank">
-        <button class="btn">Instagram</button>
-      </a>
-
-    </div>
+    <a href="https://www.instagram.com/tj_company29/" target="_blank">
+      <button class="btn">Instagram</button>
+    </a>
 
   </section>
 
   <footer>
 
-    © 2026 TJPvt.Ltd | All Rights Reserved
+    © 2026 INKSPIRE BUSINESS SOLUTIONS | All Rights Reserved
 
   </footer>
 
 </body>
 
 </html>
+
