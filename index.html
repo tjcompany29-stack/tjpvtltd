@@ -1,40 +1,70 @@
 <!DOCTYPE html>
 <html>
+
 <head>
   <title>TJPvt.Ltd</title>
+
   <style>
-    body{
-      background:black;
-      color:white;
-      text-align:center;
-      font-family:Arial;
-      padding-top:100px;
+    body {
+      margin: 0;
+      padding: 0;
+      background: black;
+      color: white;
+      font-family: Arial;
+      text-align: center;
     }
 
-    h1{
-      font-size:60px;
+    .hero {
+      padding-top: 150px;
     }
 
-    button{
-      padding:15px 30px;
-      border:none;
-      background:white;
-      color:black;
-      font-size:20px;
-      border-radius:10px;
-      cursor:pointer;
+    h1 {
+      font-size: 70px;
+      margin-bottom: 20px;
+    }
+
+    p {
+      font-size: 25px;
+      color: lightgray;
+    }
+
+    button {
+      margin-top: 30px;
+      padding: 15px 35px;
+      font-size: 20px;
+      border: none;
+      border-radius: 12px;
+      cursor: pointer;
+      font-weight: bold;
+    }
+
+    button:hover {
+      background: gray;
+      color: white;
     }
   </style>
 </head>
+
 <body>
 
-<h1>Welcome to TJPvt.Ltd</h1>
-<p>Professional Business Website</p>
+  <div class="hero">
 
-<button onclick="alert('Thanks for contacting TJPvt.Ltd!')">
-Contact Us
-</button>
+    <h1>Welcome to TJPvt.Ltd</h1>
 
+    <p>Professional Business Website</p>
+
+    <button onclick="showMessage()">
+      Contact Us
+    </button>
+
+  </div>
+
+  <script>
+    function showMessage() {
+      alert("Thanks for contacting TJPvt.Ltd!");
+    }
+  </script>
 
 </body>
+
 </html>
