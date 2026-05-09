@@ -17,15 +17,40 @@
     }
 
     body{
-      font-family:Arial, sans-serif;
-      background:linear-gradient(135deg,#ff9a9e,#fad0c4,#fbc2eb,#a18cd1);
+      font-family:Arial,sans-serif;
+      animation:bgchange 8s infinite alternate;
       color:white;
+      overflow-x:hidden;
+    }
+
+    @keyframes bgchange{
+
+      0%{
+        background:#ff0080;
+      }
+
+      25%{
+        background:#7928ca;
+      }
+
+      50%{
+        background:#007cf0;
+      }
+
+      75%{
+        background:#00dfd8;
+      }
+
+      100%{
+        background:#ff4d4d;
+      }
+
     }
 
     nav{
       width:100%;
       padding:20px 50px;
-      background:rgba(0,0,0,0.7);
+      background:rgba(0,0,0,0.3);
       backdrop-filter:blur(10px);
       display:flex;
       justify-content:space-between;
@@ -37,19 +62,19 @@
 
     nav h1{
       font-size:30px;
-      color:#fff;
+      animation:textcolor 4s infinite;
     }
 
     nav ul{
       display:flex;
-      list-style:none;
       gap:25px;
+      list-style:none;
     }
 
     nav ul li a{
-      color:white;
       text-decoration:none;
       font-size:18px;
+      color:white;
       transition:0.3s;
     }
 
@@ -60,52 +85,67 @@
     .hero{
       height:100vh;
       display:flex;
-      flex-direction:column;
       justify-content:center;
       align-items:center;
+      flex-direction:column;
       text-align:center;
       padding:20px;
     }
 
     .hero h2{
-      font-size:75px;
+      font-size:80px;
       margin-bottom:20px;
-      text-shadow:0 0 20px rgba(255,255,255,0.8);
-      animation:zoom 2s infinite alternate;
-    }
-
-    @keyframes zoom{
-      from{
-        transform:scale(1);
-      }
-
-      to{
-        transform:scale(1.05);
-      }
+      animation:textcolor 3s infinite;
     }
 
     .hero p{
       font-size:28px;
       margin-bottom:40px;
+      animation:textcolor 5s infinite;
+    }
+
+    @keyframes textcolor{
+
+      0%{
+        color:#ffffff;
+      }
+
+      25%{
+        color:#ffff00;
+      }
+
+      50%{
+        color:#00ffcc;
+      }
+
+      75%{
+        color:#ff66ff;
+      }
+
+      100%{
+        color:#ffcc00;
+      }
+
     }
 
     .btn{
       padding:15px 35px;
       border:none;
-      border-radius:30px;
+      border-radius:40px;
       font-size:18px;
       font-weight:bold;
       cursor:pointer;
       margin:10px;
+      transition:0.4s;
       background:white;
       color:black;
-      transition:0.3s;
     }
 
     .btn:hover{
       transform:scale(1.1);
       background:black;
       color:white;
+      box-shadow:0 0 25px white;
     }
 
     .section{
@@ -114,9 +154,9 @@
     }
 
     .section h2{
-      font-size:55px;
+      font-size:60px;
       margin-bottom:40px;
-      text-shadow:0 0 10px rgba(255,255,255,0.5);
+      animation:textcolor 4s infinite;
     }
 
     .products{
@@ -132,12 +172,12 @@
       backdrop-filter:blur(15px);
       border-radius:25px;
       overflow:hidden;
-      box-shadow:0 0 20px rgba(0,0,0,0.3);
-      transition:0.3s;
+      transition:0.4s;
+      box-shadow:0 0 25px rgba(255,255,255,0.2);
     }
 
     .card:hover{
-      transform:translateY(-12px);
+      transform:translateY(-12px) scale(1.03);
     }
 
     .card img{
@@ -151,22 +191,25 @@
     }
 
     .card h3{
-      font-size:28px;
+      font-size:30px;
       margin-bottom:15px;
+      animation:textcolor 5s infinite;
     }
 
     .price{
-      font-size:35px;
+      font-size:38px;
       font-weight:bold;
       margin:20px 0;
-      color:yellow;
+      animation:textcolor 3s infinite;
     }
 
     footer{
-      background:rgba(0,0,0,0.7);
       padding:30px;
       text-align:center;
+      background:rgba(0,0,0,0.3);
+      backdrop-filter:blur(10px);
       margin-top:60px;
+      animation:textcolor 4s infinite;
     }
 
     @media(max-width:768px){
@@ -191,6 +234,7 @@
     }
 
   </style>
+
 </head>
 
 <body>
@@ -211,7 +255,7 @@
 
     <h2>INKSPIRE BUSINESS SOLUTIONS</h2>
 
-    <p>Premium Spiral Notebook Store</p>
+    <p>Modern Premium Spiral Notebook Store</p>
 
     <a href="mailto:tjpvtltd@gmail.com">
       <button class="btn">Email Us</button>
@@ -301,14 +345,6 @@
 
     <a href="https://wa.me/919871590390" target="_blank">
       <button class="btn">WhatsApp 2</button>
-    </a>
-
-    <a href="tel:+919717543376">
-      <button class="btn">Call 1</button>
-    </a>
-
-    <a href="tel:+919871590390">
-      <button class="btn">Call 2</button>
     </a>
 
     <a href="https://www.instagram.com/inkspire_business_solutions/" target="_blank">
